@@ -194,7 +194,7 @@ public class CompareSorts {
         JFreeChart chart = ChartFactory.createXYLineChart("Grafik", "Time (Nanoseconds)", "Array Size", dataSet, PlotOrientation.HORIZONTAL, true, true, false);
 
         try {
-            ChartUtilities.saveChartAsJPEG(new File("C:\\Users\\berat\\Desktop\\charts\\" + method + ".JPEG"), chart, 800, 600);
+            ChartUtilities.saveChartAsJPEG(new File(method + ".JPEG"), chart, 800, 600);
         } catch (IOException ex) {
             Logger.getLogger(CompareSorts.class.getName()).log(Level.SEVERE, null, ex);
         }
